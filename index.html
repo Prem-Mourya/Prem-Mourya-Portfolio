@@ -6,72 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prem Mourya | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+        <!-- Remix Icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!-- Swiper slider  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Prem M</div>
-      <div>
-        <ul class="nav-links"> <a href="#top"></a>
-          <!-- <li><a href="#about">About</a></li> -->
-          <li><a href="#experience">My Skills</a></li>
-          <li><a href="#projects">Recent Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+ <nav>
+        <div class="bars">
+            <i class="ri-bar-chart-horizontal-fill"></i>
+        </div>
+        <div class="logo">
+            CodeVode .
+        </div>
+
+        <ul id="menu">
+            <i class="ri-close-large-line" id="close"></i>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Expertise</a></li>
+            <li><a href="#projects">Project</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+            <!-- <li><a href="#">Blog</a></li> -->
         </ul>
-      </div>
+
+        <div class="btn1">
+            <button class="btn-1" onclick="location.href=('./#contact')">Contact Me</button>
+        </div>
+
+        <i class="ri-search-line" id="search"></i>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Prem M</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+
+    <div class="hero-header">
+        <div class="box">
+            <div class="content-info1">
+                <div class="hero-info" data-tilt data-tilt-max="10">
+                    <div class="hero-box">
+                        <h2>HELLO I'M <span>Prem</span></h2>
+                    </div>
+                </div>
+                <div class="hero-wrapper" data-tilt data-tilt-max="10">
+                    <div class="wrapper-info">
+                        <h1>325+</h1>
+                        <span>Clients</span>
+                    </div>
+                    <div class="swiper myswiper">
+                        <div class="swiper-wrapper">
+                            <!-- slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="images/swiper-1.jpeg" alt="" class="">
+                                </div>
+                            </div>
+                            <!-- slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="images/swiper2.jpeg" alt="" class="">
+                                </div>
+                            </div>
+                            <!-- slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="images/swiper3.png" alt="" class="">
+                                </div>
+                            </div>
+                            <!-- slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="images/swiper-4.jpeg" alt="" class="">
+                                </div>
+                            </div>
+                            <!-- slide 5 -->
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="images/swiper-5.jpeg" alt="" class="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./images/hero-image.jpg" alt="lol...">
+            </div>
+
+
+            <div class="hero-content-end">
+                <div class="hero-info-end" data-tilt data-tilt-max="10">
+                    <div class="info">
+                        <span>1</span>
+                        <p>Years Of <br> Experience</p>
+                    </div>
+                </div>
+                <div class="hero-box-end" data-tilt data-tilt-max="10">
+                    <h2>Full Stack <br> Web developer</h2>
+                </div>
+            </div>
         </div>
-        <div class="menu-links">
-          <!-- <li><a href="#about" onclick="toggleMenu()">About</a></li> -->
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Recent Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-         <img src="./assets/My-profile-temp'.jpg" alt="John Doe profile picture" />
-        
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Prem Mourya</h1>
-        <p class="section__text__p2">Web Developer | MERN</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/PremMourya-Resume.pdf')"
-          >
-            My CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#about'">
-            About me
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/prem-mourya/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Prem-Mourya'"
-          />
-        </div>
-      </div>
-    </section>
+    </div>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -106,11 +139,13 @@
           </div>
           <div class="text-container">
             <p>
-              Highly skilled full-stack web developer(MERN) with extensive experience in designing, developing, and deploying scalable web
-              applications. Proficient in a range of technologies including HTML5, CSS, JavaScript, Tailwind Css, React, MonoDB, Express, Git | Github, Prompt AI
-              . Proven track record of successfully completing multiple projects. Seeking a challenging role to leverage my
-              expertise and contribute to innovative projects.
-
+              Highly skilled full-stack web developer(MERN) with extensive
+              experience in designing, developing, and deploying scalable web
+              applications. Proficient in a range of technologies including
+              HTML5, CSS, JavaScript, Tailwind Css, React, MonoDB, Express, Git
+              | Github, Prompt AI . Proven track record of successfully
+              completing multiple projects. Seeking a challenging role to
+              leverage my expertise and contribute to innovative projects.
             </p>
           </div>
         </div>
@@ -124,7 +159,7 @@
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
+      <h1 class="title">Expertise</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -293,7 +328,9 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Adventure Parallex</h2>
+            <h2 class="experience-sub-title project-title">
+              Adventure Parallex
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -317,7 +354,9 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Portfolio website</h2>
+            <h2 class="experience-sub-title project-title">
+              Portfolio website
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -335,42 +374,72 @@
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
             <h2 class="experience-sub-title project-title">Netfilx Clone</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Prem-Mourya/Netflix-Clone'">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Prem-Mourya/Netflix-Clone'"
+              >
                 Github
               </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://netflix-clone-prem-mourya.vercel.app'">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://netflix-clone-prem-mourya.vercel.app'"
+              >
                 Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
             <h2 class="experience-sub-title project-title">Netfilx Clone</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Prem-Mourya/Netflix-Clone'">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Prem-Mourya/Netflix-Clone'"
+              >
                 Github
               </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://netflix-clone-prem-mourya.vercel.app'">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://netflix-clone-prem-mourya.vercel.app'"
+              >
                 Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
             <h2 class="experience-sub-title project-title">Netfilx Clone</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Prem-Mourya/Netflix-Clone'">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Prem-Mourya/Netflix-Clone'"
+              >
                 Github
               </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://netflix-clone-prem-mourya.vercel.app'">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://netflix-clone-prem-mourya.vercel.app'"
+              >
                 Live Demo
               </button>
             </div>
@@ -394,7 +463,9 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">premmourya998@gmail.com</a></p>
+          <p>
+            <a href="mailto:examplemail@gmail.com">premmourya998@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -404,32 +475,48 @@
           />
           <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
         </div>
-         <div class="contact-info-container">
+        <div class="contact-info-container">
           <img
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com" target="_blank">Instagram Page</a></p>
+          <p>
+            <a href="https://www.linkedin.com" target="_blank"
+              >Instagram Page</a
+            >
+          </p>
         </div>
       </div>
     </section>
     <footer>
       <nav>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/PremMourya-Resume.pdf')">
-          My CV
-        </button>
-        <button class="btn btn-color-1" onclick="window.open (href='mailto:examplemail@gmail.com')">
-          Hire me
-        </button>
-        <button class="btn btn-color-2" onclick="location.href=('./#top')">
-          Home
-        </button>
-      </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/PremMourya-Resume.pdf')"
+          >
+            My CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.open (href='mailto:examplemail@gmail.com')"
+          >
+            Hire me
+          </button>
+          <button class="btn btn-color-2" onclick="location.href=('./#top')">
+            Home
+          </button>
+        </div>
       </nav>
       <p>Copyright &#169; 2024 Prem Mourya. All Rights Reserved.</p>
     </footer>
+     <!-- Tile Js animation  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/tilt.jquery.js"></script>
+    <!-- swiper slider Js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="script1.js"></script>
   </body>
 </html>
